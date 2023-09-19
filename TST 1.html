@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tugas 2</title>
+
+    <style type="text/css">
+        .ole{
+            color: aliceblue;
+            font-size: 30px;
+        }
+        .dah{
+            color: #000080;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+<body style="background: #FFFAFA;">
+    <form action="register.php" method="POST">
+    <table width="100%">
+        <tr bgcolor="#3498DB">
+            <td colspan="2">
+                <h1 class="ole"><center><b>Formulir Biodata Mahasiswa</center></b></h1>
+            </td>
+        </tr>
+    <tr bgcolor="aliceblue">
+    <td width="250"><h1 class="dah">Nama</h1></td>
+    <td><input type="text" name="nama" required>
+    <br>
+    </td>
+    </tr>
+
+    <tr bgcolor="#E0FFFF">
+    <td><h1 class="dah">NIM</h1></td>
+    <td><input type="number" required></td>
+    </tr>
+
+    <tr bgcolor="aliceblue">
+    <td>
+    <label for="tempat"><h1 class="dah">Tempat /</label>
+    <label for="tanggal_lahir">Tanggal Lahir</h1></label></td>
+    <td><input type="text" name="tempat" id="tempat">
+    <input type="date"name="tl" id="tanggal_lahir">
+    <br>
+    </td>
+    </tr>
+
+    <tr bgcolor="#E0FFFF">
+    <td><h1 class="dah">Gender</h1></td>
+    <td>
+    <input type="radio" name="gender" id="lk" value="Pria"><label for="lk">Laki-Laki</label>
+    <input type="radio" name="gender" id="pr" value="Wanita"><label for="pr">Perempuan</label>
+    <br>
+    </td>
+    </tr>
+
+    <tr bgcolor="aliceblue">
+        <td>
+            <h1 class="dah">Agama</h1><br>
+        </td>
+        <td>
+            <select name="agama" id="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen Protestan</option>
+                <option value="Katolik">Kristen Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">Konghucu</option>
+            </select>
+            <br>
+            </td>
+    </tr>
+
+    <tr bgcolor="#E0FFFF">
+        <td><h1 class="dah">Golongan Darah</h1><br></td>
+        <td>
+            <input type="radio" name="darah" id="golO" value="golongan_O"><label for="O">O</label>
+            <input type="radio" name="darah" id="golA" value="golongan_A"><label for="A">A</label>
+            <input type="radio" name="darah" id="golB" value="golongan_B"><label for="B">B</label>
+            <input type="radio" name="darah" id="golAB" value="golongan_AB"><label for="AB">AB</label>
+        <br>
+        </td>
+    </tr>
+
+    <tr bgcolor="aliceblue">
+        <td>
+            <h1 class="dah">Asal Kabupaten / Kota</h1><br>
+        </td>
+        <td><input type="text" name="Asal_Kota" required></td>
+    </tr>
+
+    <tr bgcolor="#E0FFFF">
+    <td><label for="alamat"><h1 class="dah">Alamat Anda</h1></label><br></td>
+    <td><textarea name="alamat" id="alamat" cols="50" rows="5"></textarea>
+    <br>
+    </td>
+    </tr>
+
+    <tr bgcolor="aliceblue">
+        <td>
+            <h1 class="dah">Nomor HP</h1>
+        </td>
+        <td>
+            <input type="number">
+        </td>
+    </tr>
+
+    <tr bgcolor="#E0FFFF">
+    <td><h1 class="dah">Email</h1></td>
+    <td><input type="text" name="email" required>
+    <br>
+    </td>
+    </tr>
+
+    <tr bgcolor="aliceblue">
+    <td><label for="sandi"><h1 class="dah">Password</h1></label></td>
+    <td><input type="password" id="sandi" required>
+    <br>
+    </td>
+    </tr>
+
+    <tr bgcolor="#E0FFFF">
+        <td><h1 class="dah">Hobi</h1><br></td>
+           <td><input type="checkbox">Travelling<br>
+            <input type="checkbox">Nonton<br>
+            <input type="checkbox">Membaca<br>
+            <input type="checkbox">Menulis<br>
+            <input type="checkbox">Memasak<br>
+            <input type="checkbox">Mendengar Musik<br>
+            <input type="checkbox">Olahraga<br>
+            <input type="checkbox">Lainnya<br>
+            </td>
+    
+        </td>
+    </tr>
+
+    <tr bgcolor="aliceblue">
+        <td>
+            <h1 class="dah">Jurusan</h1><br>
+        </td>
+        <td>
+            <select name="jurusan" id="jurusan">
+                <option value="S1 Teknologi Informasi">S1 Teknologi Informasi</option>
+                <option value="S1 Ilmu Komputer">S1 Ilmu Komputer</option>
+                <option value="S2 Teknik Informatika">S2 Teknik Informatika</option>
+                <option value="S2 DSAI">S2 Sains Data dan Kecerdasan Buatan</option>
+                <option value="S3 Ilmu Komputer">S3 Ilmu Komputer</option>
+            </select>
+            <br>
+            </td>
+    </tr>
+
+    <tr bgcolor="#E0FFFF">
+        <td>
+            <h1 class="dah">Mata Kuliah Favorit</h1><br>
+        </td>
+        <td>
+            <select name="matkul" id="matkul">
+                <option value="Pemrograman Web">Pemrograman Web</option>
+                <option value="Dasar Pemrograman">Dasar Pemrograman</option>
+                <option value="Pengantar Teknologi Informasi">Pengantar Teknologi Informasi</option>
+                <option value="Matematika Dasar">Matematika Dasar</option>
+                <option value="Organisasi dan Arsitektur Komputer">Organisasi dan Arsitektur Komputer</option>
+                <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                <option value="Pendidikan Pancasila">Pendidikan Pancasila</option>
+            </select>
+            <br>
+    
+        </td>
+    </tr>
+    <tr>
+    <td colspan="2">
+    <center>
+    <input type="submit" value="Daftar">
+    <button type="reset">Hapus Form</button>
+    </center>
+    </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><script>document.write(new Date().getFullYear())</script><b>
+            &copy;Sarah Agnes Marpaung</b></td>
+    </tr>
+
+    </form>
+</table>
+</body>
+</html>
